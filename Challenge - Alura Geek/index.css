@@ -1,0 +1,168 @@
+/* Configuração geral */
+html,body {
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column; /* Permite alinhar os elementos verticalmente */
+}
+header {
+    background-color: #5300C8;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer {
+    background-color: #5300C8; /* Cor de fundo para o rodapé */
+    color: white; /* Cor do texto */
+    text-align: center;
+    padding: 20px 0; /* Espaçamento interno */
+    margin-top: auto; /* Move o rodapé para o final do layout */
+}
+
+figure {
+    margin: 0; /* Remove margens padrão */
+}
+.rodapé {
+    color: white;
+}
+
+.rodapé--alura {
+    color: gray;
+}
+
+main.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Estilo da seção "Meus Produtos" */
+.produtos {
+    flex: 2;
+}
+
+.produtos__lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
+}
+
+.produto {
+    background-color: #6C63FF;
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.produto:hover {
+    transform: scale(1.05); /* Efeito de aumentar o card ao passar o mouse */
+}
+
+.produto__imagem {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.produto__nome {
+    font-size: 12px;
+    margin: 5px 0;
+}
+
+.produto__preco {
+    font-size: 14px;
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+.produto__remover {
+    background-color: #ff5c5c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 12px;
+}
+
+.produto__remover:hover {
+    background-color: #ff3a3a;
+}
+
+/* Estilo da seção "Adicionar Produto" */
+.adicionar {
+    flex: 2; /* Aumenta a largura da seção "Adicionar Produto" */
+    padding-left: 40px; /* Aumenta o espaçamento à esquerda */
+    gap: 15px; /* Maior espaçamento entre os elementos */
+}
+
+.adicionar__formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.adicionar__campo {
+    padding: 10px;
+    border: 2px solid #5300C8;
+    border-radius: 8px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 12px;
+    color: #333;
+    width: 50%;
+}
+
+.adicionar__botoes {
+    display: flex;
+    gap: 10px; /* Espaçamento entre os botões */
+    justify-content: flex-start; /* Alinha os botões à direita */
+    padding-left: 20px; /* Adiciona espaço à direita, se necessário */
+}
+
+.botao {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 12px;
+}
+
+.botao--guardar {
+    background-color: #5300C8;
+    color: white;
+    border-left: 0px;
+}
+
+.botao--guardar:hover {
+    background-color: #6C63FF;
+}
+
+.botao--limpar {
+    background-color: #ff5c5c;
+    color: white;
+    border-left: 0px;
+}
+
+.botao--limpar:hover {
+    background-color: #ff3a3a;
+}
+
+/* Título das seções */
+.titulo {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-family: 'Press Start 2P', cursive;
+}

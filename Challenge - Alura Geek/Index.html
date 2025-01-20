@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraGeek - Heitor</title>    
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <header>
+        <figure>
+            <img src="./Imagens/logo.svg" alt="Logo AluraGeek">
+        </figure>
+    </header>
+    
+    <main class="container">
+
+    
+
+        <!-- Seção Adicionar Produto -->
+<section class="adicionar">
+    <h2 class="titulo">Adicionar Produto:</h2>
+    <form id="adicionar-formulario" class="adicionar__formulario">
+        <input id="nome-produto" class="adicionar__campo" type="text" placeholder="Nome...">
+        <input id="valor-produto" class="adicionar__campo" type="text" placeholder="Valor...">
+        <input id="imagem-produto" class="adicionar__campo" type="text" placeholder="URL da imagem...">
+        <div class="adicionar__botoes">
+            <button id="guardar-produto" type="button" class="botao botao--guardar">Guardar</button>
+            <button id="limpar-formulario" type="button" class="botao botao--limpar">Limpar</button>
+        </div>
+    </form>
+</section>
+
+        <!-- Seção Meus Produtos -->   
+<section class="produtos">
+    <h2 class="titulo">Meus Produtos:</h2>
+        <div id="produtos-lista" class="produtos__lista">
+        <!-- Os produtos adicionados aparecerão aqui -->
+    </div>
+</section>
+    </main>
+    
+    <footer>
+        <figure>
+            <img src="./Imagens/logo.svg" alt="Logo AluraGeek">
+            <figcaption class="rodapé">Desenvolvido por Heitor Pedro de Godoi</figcaption>
+        </figure>
+        <p class="rodapé--alura">Alura Latam - 2025</p>
+    </footer>
+      <script src="main.js"></script>
+</body>
+</html>
